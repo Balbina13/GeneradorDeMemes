@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(27, 26, 31);
+}
+
+.seccion_top    {
+    background-color: rgb(14, 13, 19);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.titulo_principal   {
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/*SECCION BARRA DE OPCIONES*/
+
+.contenedor_nav_bar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav_bar    {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav_bar li   {
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+li {
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    gap: 10px;
+}
+
+/*FIN SECCION BARRA DE OPCIONES*/
+
+/*SECCION CENTRAL*/
+.seccion_contenedora    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ .seccion_central   {
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+ }
+
+.seccion_top_text   {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+} 
+
+.seccion_imagen {
+    background-color: black;
+    width: 100%;
+    height: 420px;
+}
+
+.seccion_bottom_text    {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}  
+
+/*BOTON DE DESCARGA*/
+
+.boton_de_descarga  {
+    margin-top: 50px;
+    background-color: rgb(71, 146, 87);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5%;
+    font-size: 15px;
+    cursor: pointer;
+    /* transition: all 0.2 ease rgb(228, 56, 56); */
+}
+
+.boton_de_descarga button:hover {
+    transition: all 0.2 #fff;
+    /* background-color: #153608; */
+}
