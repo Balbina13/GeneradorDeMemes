@@ -13,9 +13,9 @@
         <section class="container_nav_bar">   
             <nav class="nav_bar">
                 <ul>
-                    <li><a href="#"> <i class="fa-regular fa-image"></i> Imagen</a></li>
-                    <li><a href="#"> <i class="fa-solid fa-font"></i> Texto</a></li>
-                    <li><a href="#"> <i class="fa-regular fa-lightbulb"></i> Modo oscuro</a></li>
+                    <li><a href="#"> <i class="fa-regular fa-image"></i>Imagen</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-font"></i>Texto</a></li>
+                    <li><a href="#"> <i class="fa-regular fa-lightbulb"></i>Modo oscuro</a></li>
                 </ul>
             </nav>
         </section><!--fin seccion navegador-->
@@ -35,13 +35,39 @@
 
     </section>
     <aside class="aside_image">
-        <h2 class="aside_image_title">Imagen</h3>
-        <h3 class="control_panel_img_url">URL</h3>
-             <input type="text" class="control_panel_input" id="input_url_img">
-        <h3 class="control_panel_img_fondo">Fondo</h3>
+    <button class="close_panel_control" id="close_panel_control">&#9775;</button>
+    <section class="aside_all_setting_img">
+    <div class="aside_img_container">
+        <h2 class="aside_image_title">Imagen</h2>
+        <h3 class="aside_label_img_url">URL</h3>
+            <input type="text" class="control_panel_input" id="input_url_img">
+    </div><!--aside img container-->        
+    <div class="aside_background_img_setting">        
+        <label for="colour background" class="panel_control_img_background">Fondo</label>
             <input type="colour" name="" id="input_colour_img" value="#FFFFFF">
-        <h3 class="control_panel_img_filters">Filtros</h3>
-
+    </div><!--background img setting-->        
+    <div class="aside_filters_container">
+        <h3 class="control_panel_img_filters">FILTROS</h3>    
+        <label for="brightness" class="filter_brightness">BRILLO</label>
+            <input type="range" name="brightness" id="filter_brightness" min="0" max="1" step="0.1" value="1">
+        <label for="opacity" class="filter_opacity">OPACIDAD</label>
+            <input type="range" name="opacity" id="opacity" min="0" max="1" step="0.1" value="1">
+        <label for="contrast" class="filter_contrast">CONTRASTE</label>
+            <input type="range" name="contrast" id="contrast" min="100" max="1000" step="1" value="100"> 
+        <label for="blur" class="filter_blur">BRILLO</label>
+            <input type="range" name="blur" id="blur" min="0" max="10" step="0.1" value="0">
+        <label for="grayscale" class="filter_grayscale">ESCALA DE GRISES</label>
+            <input type="range" name="grayscale" id="grayscale" min="0" max="100" step="1" value="0">
+        <label for="sepia" class="filter_sepia">SEPIA</label>
+            <input type="range" name="sepia" id="sepia" min="0" max="100" step="1" value="0">
+        <label for="hue-rotation">HUE</label>
+            <input type="range" name="hue-rotation" id="hue-rotation" min="0" max="359" step="1" value="0" >
+        <label for="saturation" class="filter_saturation">SATURACION<label>
+            <input type="range" name="saturation" id="saturation" min="100" max="1000" step="10" value="100">
+        <label for="invert" class="filter_invert">NEGATIVO</label>
+            <input type="range" name="invert" id="invert" min="0" max="1" step="0.1" value="1">                               
+    </div><!--panel control-->  
+    </section><!--end img section-->  
     </aside>
     <aside class="aside_text">
         <h2 class="aside_text_title">Texto</h2>
