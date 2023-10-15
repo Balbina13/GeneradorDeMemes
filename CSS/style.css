@@ -2,6 +2,15 @@
 
 /* font-family: 'Montserrat', sans-serif; */
 
+@import url('https://fonts.cdnfonts.com/css/impact');
+
+/* font-family: 'Impact', sans-serif; */
+/* font-family: 'Impacted', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+
 *   {
     margin: 0;
     padding: 0;
@@ -13,7 +22,7 @@ body{
     background-color: rgb(27, 26, 31);
 }
 
-.seccion_top    {
+.section_top    {
     background-color: rgb(14, 13, 19);
     width: 100%;
     height: 120px;
@@ -24,7 +33,7 @@ body{
     
 }
 
-.titulo_principal   {
+.main_title  {
     font-size: 2rem;
     color: #fff;
     padding: 10px;
@@ -34,7 +43,7 @@ body{
 
 /*SECCION BARRA DE OPCIONES*/
 
-.contenedor_nav_bar {
+.container_nav_bar {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -61,19 +70,25 @@ ul li a{
     text-decoration: none;
     text-align: center;
     font-size: 15px;
-    gap: 10px;
+    gap: 20px;
+    padding: 10px 15px;
+    border-radius: 5%;
+}
+
+.nav_bar a:hover{
+    background-color: rgb(59, 58, 58);
 }
 
 /*FIN SECCION BARRA DE OPCIONES*/
 
 /*SECCION CENTRAL*/
-.seccion_contenedora    {
+.section_container    {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
- .seccion_central   {
+ .section_central   {
     width: 600px;
     height: 600px;
     margin-top: 50px;
@@ -82,35 +97,55 @@ ul li a{
 .seccion_top_text   {
     background-color: #fff;
     width: 100%;
-    height: 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } 
 
-.seccion_imagen {
+.top_text{
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Impact', sans-serif;
+    font-size: 30px;
+}
+
+.section_image {
     background-color: black;
     width: 100%;
     height: 420px;
 }
 
-.seccion_bottom_text    {
+.section_bottom_text    {
     background-color: #fff;
     width: 100%;
-    height: 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }  
+
+.bottom_text{
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Impact', sans-serif;
+    font-size: 30px;
+}
 
 /*BOTON DE DESCARGA*/
 
-.boton_de_descarga  {
-    margin-top: 50px;
-    background-color: rgb(71, 146, 87);
+.button_download  {
+    margin-top: 70px;
+    background-color: #2e7d32;
     color: #fff;
     padding: 15px;
     border-radius: 5%;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
-    /* transition: all 0.2 ease rgb(228, 56, 56); */
+    font-family: 'Open Sans', sans-serif;
 }
 
-.boton_de_descarga button:hover {
-    transition: all 0.2 #fff;
-    /* background-color: #153608; */
+button:hover {
+    background-color: #225e25;
+    
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://kit.fontawesome.com/50017abc0a.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <section class="seccion_top">
-        <h1 class="titulo_principal">Generador de Memes</h1>
-        <section class="contenedor_nav_bar">   
+    <section class="section_top">
+        <h1 class="main_title">Generador de Memes</h1>
+        <section class="container_nav_bar">   
             <nav class="nav_bar">
                 <ul>
                     <li><a href="#"> <i class="fa-regular fa-image"></i> Imagen</a></li>
@@ -20,20 +20,40 @@
             </nav>
         </section><!--fin seccion navegador-->
     </section><!--fin seccion top-->
-    <section class="seccion_contenedora">
-        <div class="seccion_central">
+    <section class="section_container">
+        <div class="section_central">
             <div class="seccion_top_text">
-                <h3>Top text</h3>
+                <h3 class="top_text">Top text</h3>
             </div>
-            <div class="seccion_imagen">
+            <div class="section_image">
             </div>
-            <div class="seccion_bottom_text">
-                <h3>Bottom text</h3>
+            <div class="section_bottom_text">
+                <h3 class="bottom_text">Bottom text</h3>
             </div>
         </div>
-        <button class="boton_de_descarga" > <i class="fa-solid fa-download"></i> Descargar meme</button>
+        <button class="button_download" > <i class="fa-solid fa-download"></i>Descargar meme</button>
 
     </section>
+    <aside class="aside_image">
+        <h2 class="aside_image_title">Imagen</h3>
+        <h3 class="control_panel_img_url">URL</h3>
+             <input type="text" class="control_panel_input" id="input_url_img">
+        <h3 class="control_panel_img_fondo">Fondo</h3>
+            <input type="colour" name="" id="input_colour_img" value="#FFFFFF">
+        <h3 class="control_panel_img_filters">Filtros</h3>
+
+    </aside>
+    <aside class="aside_text">
+        <h2 class="aside_text_title">Texto</h2>
+        <h3 class="control_panel_txt_top">Superior</h3>
+        <h3 class="control_panel_txt_bottom">Inferior</h3>
+        <h3 class="control_panel_txt_colour">Color</h3>
+        <h3 class="control_panel_txt_background">Fondo</h3>
+        <h3 class="control_panel_txt_contour">Contorno</h3>
+        <h3 class="control_panel_txt_spacing">Espaciado</h3>
+        <h3 class="control_panel_txt_line_spacing">Interlineado</h3>
+
+    </aside>
 
 
 
@@ -55,6 +75,6 @@
 
 
     
-    <script src="./index.js"></script>
+    <script src="./javascript/index.js"></script>
 </body>
 </html>
