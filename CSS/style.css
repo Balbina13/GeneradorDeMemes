@@ -11,35 +11,45 @@
 
 /* font-family: 'Open Sans', sans-serif; */
 
+:root   {
+    --color-background: #30343f;
+    --color-top-background: #191e2b;
+    --color-aside-background: #252935;
+    --color-buttons: #393e49;
+    --color-buttons-hover: #4e5565;
+    --color-fonts: #ffffff;
+
+}
+
 *   {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    background-color: rgb(27, 26, 31);
+    background-color: var(--color-background);
 }
 
 .section_top    {
-    background-color: rgb(14, 13, 19);
+    background-color: var(--color-top-background);
+    position: relative;
     width: 100%;
     height: 120px;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
 .main_title  {
-    font-size: 2rem;
-    color: #fff;
+    font-size: 2.2rem;
+    color: var(--color-fonts);
     padding: 10px;
     text-align: center;
-    
+
 }
 
 /*SECCION BARRA DE OPCIONES*/
@@ -59,15 +69,19 @@ body{
     display: inline-block;
     align-items: center;
     padding: 10px;
-    
+
 }
 
 li {
     list-style: none;
 }
 
+.icon   {
+    margin-right: 5px;
+}
+
 ul li a{
-    color: #fff;
+    color: var(--color-fonts);
     text-decoration: none;
     text-align: center;
     font-size: 15px;
@@ -77,7 +91,7 @@ ul li a{
 }
 
 .nav_bar a:hover{
-    background-color: rgb(59, 58, 58);
+    background-color: var(--color-buttons-hover);
 }
 
 /*FIN SECCION BARRA DE OPCIONES*/
@@ -88,21 +102,22 @@ ul li a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
  .section_central   {
     width: 600px;
-    height: 600px;
+    height: 500px;
     margin-top: 50px;
  }
 
 .seccion_top_text   {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 100%;
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
 
 .top_text{
     text-align: center;
@@ -124,7 +139,7 @@ ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-}  
+}
 
 .bottom_text{
     text-align: center;
@@ -148,5 +163,333 @@ ul li a{
 
 button:hover {
     background-color: #225e25;
+
+}
+
+/*SECCION ASIDE*/
+
+.aside_section{
+   position: absolute;
+   background-color: var(--color-aside-background);
+   color: var(--color-fonts);
+   width: 260px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   float: left;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+
+.close_panel_control    {
+    display: none;
+}
+
+.aside_image{
+    display: none;
+}
+
+.aside_img_container    {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.aside_image_title  {
+    text-align: center;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.aside_label_img_url    {
+    font-size: 13px;
+    color: var(--color-fonts);
+    margin-left: 10px;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+.panel_control_input    {
+    background-color: var(--color-background);
+    align-self: center;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+
+}
+
+.panel_control_input:hover{
+    transition: all 0.5s ease;
+     background-color: var(--color-buttons-hover);
+}
+
+.aside_background_img_setting  {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+    margin-top: 10px;
+}
+
+.aside_colour_and_selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-basis: 50px; */
+    width: 90%;
+    height: 45px;
+    gap: 15px;
+
+}
+
+.panel_control_img_background {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.panel_control_background{
+    background-color: var(--color-background);
+    /* align-self: center; */
+    width: 100px;
+    padding: 20px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--color-fonts);
+    margin-left: 10px;
+}
+
+.color_select_span  {
+    position: absolute;
+    color: var(--color-fonts);
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.colour_effect_selector {
+    margin-top: 30px;
+    margin-left: -8px;
+}
+
+.effect_selector {
+    background-color: var(--color-background);
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--color-fonts);
+    margin-left: 5px;
+}
+
+.aside_filters_container    {
+    margin-top: 20px;
+}
+
+.control_panel_img_filters  {
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.aside_filters_container label {
+    font-size: 12px;
+    margin-right: 80px;
+}
+
+.filter_setting input{
+    width: 100%;
+}
+
+.filter_setting {
+    padding: 5px 10px;
+    align-self: flex-start;
+}
+
+.reset_filters_button {
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: var(--color-buttons);
+    color: var(--color-fonts);
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+}
+
+/*END ASIDE IMG*/
+
+/*ASIDE TEXT*/
+
+.aside_all_setting_text{    
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    /* gap: 50px; */
+    margin-top: 20px;
+}
+
+.aside_text_container   {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.top_text_area, 
+.bottom_text_area, 
+#font_selection, 
+.button_align,
+#font_size,
+#font_colours,
+#background_font_colours,
+.non_outline,
+.light_outline,
+.dark_outline,
+.spacing_setting,
+#line_spacing_setting   {
+    background-color: var(--color-background);
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--color-fonts);
+    margin-left: 5px;
+}
+
+.top_text_area:hover, 
+.bottom_text_area:hover, 
+#font_selection:hover, 
+.button_align:hover,
+#font_size:hover,
+#font_colours:hover,
+#background_font_colours:hover,
+.non_outline:hover,
+.light_outline:hover,
+.dark_outline:hover,
+.spacing_setting:hover,
+#line_spacing_setting:hover {
+    transition: all 0.5s ease;
+     background-color: var(--color-buttons-hover);
+}
+
+.control_panel_txt_top,
+.control_panel_txt_bottom,
+.font_title,
+.control_panel_txt_colour,
+.control_panel_txt_background,
+.control_panel_txt_outline,
+.control_panel_txt_spacing,
+.control_panel_txt_line_spacing {
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.aside_text_title   {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#non_text_top,
+#non_text_bottom,
+#transparent_background  {
+    margin-left: 5px;
+}
+
+.non_text_top_span,
+.non_text_bottom_span,
+.non_colour_or_text   {
+    font-size: 12px;
+}
+
+#font_selection {
+    width: 98%;
+    height: 35px;
+}
+
+.align_text_section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    
     
 }
+
+#font_size  {
+    width: 50%;
+    padding: 10px 10px 10px;
+}
+
+.button_align   {
+    width: 28.91px;
+    padding: 10px 1px 10px;
+}
+
+.panel_colour_background_options    {
+    display: flex;
+    flex-direction: column;
+}
+
+.colorines  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.colour_options {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#font_colours   {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#text_color {
+    position: absolute;
+    margin-top: 30px;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+
+.background_colours_options {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#background_font_colours    {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#text_background_color  {
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 30px;
+    margin-right: 10px;
+    color: #4e5565; /*puesto asi para que se vea hasta solucionar*/
+}
+
+#transparent_background {
+    margin-top: 10px;
+}
+
+
