@@ -487,7 +487,7 @@ button:hover {
 }
 
 .aside_text_container{
-    display: none;
+    /* display: none; */
 }
 
 /*FIN ASIDE TEXT*/
@@ -510,7 +510,7 @@ button:hover {
         border: none;
         font-size: 15px;
         float: right;
-        margin-right: 15px;
+        margin-left: 205px;
         margin-top: 15px;
     }
 
