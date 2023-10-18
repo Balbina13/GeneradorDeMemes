@@ -68,7 +68,7 @@ body{
 .nav_bar li   {
     display: inline-block;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 
 }
 
@@ -97,6 +97,7 @@ ul li a{
 /*FIN SECCION BARRA DE OPCIONES*/
 
 /*SECCION CENTRAL*/
+
 .section_container    {
     display: flex;
     align-items: center;
@@ -104,58 +105,43 @@ ul li a{
     flex-direction: column;
     position: relative;
 }
- .section_central   {
-    width: 600px;
-    height: 500px;
+
+.section_central   {
+    width: 610px;
+    height: 610px;
     margin-top: 50px;
+    background-color: #0d0d0e;
+    display: flex;
+    flex-direction: column;
  }
 
-.seccion_top_text   {
+.top_text_title,
+.bottom_text_title{
+    width: 610px;
+    padding: 50px;
     background-color: #ffffff;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top_text{
     text-align: center;
     text-transform: uppercase;
-    font-family:'Impact', sans-serif;
-    font-size: 30px;
+}
+
+.bottom_text_title{
+    margin-top: 400px;
 }
 
 .section_image {
-    background-color: black;
     width: 100%;
-    height: 420px;
-}
-
-.section_bottom_text    {
-    background-color: #fff;
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bottom_text{
-    text-align: center;
-    text-transform: uppercase;
-    font-family:'Impact', sans-serif;
-    font-size: 30px;
+    height: 100%;
 }
 
 /*BOTON DE DESCARGA*/
 
 .button_download  {
-    margin-top: 70px;
+    margin-top: 60px;
     background-color: #2e7d32;
     color: #fff;
     padding: 15px;
     border-radius: 5%;
+    border: none;
     font-size: 14px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
@@ -187,7 +173,7 @@ button:hover {
 }
 
 .aside_image{
-    display: none;
+    /* display: none;  */
 }
 
 .aside_img_container    {
@@ -242,7 +228,6 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* flex-basis: 50px; */
     width: 90%;
     height: 45px;
     gap: 15px;
@@ -258,7 +243,6 @@ button:hover {
 
 .panel_control_background{
     background-color: var(--color-background);
-    /* align-self: center; */
     width: 100px;
     padding: 20px 10px;
     border: none;
@@ -333,7 +317,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 20px 15px;
-    /* gap: 50px; */
     margin-top: 20px;
 }
 
@@ -443,7 +426,7 @@ button:hover {
     flex-direction: column;
 }
 
-.colorines  {
+.colour_div  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -458,7 +441,6 @@ button:hover {
 #font_colours   {
     width: 100px;
     height: 35px;
-    border-radius: 5px;
 }
 
 #text_color {
@@ -492,4 +474,271 @@ button:hover {
     margin-top: 10px;
 }
 
+.non_outline,
+.light_outline,
+.dark_outline   {
+    padding: 10px;
+}
+
+.spacing_setting,
+#line_spacing_setting   {
+    padding: 10px;
+    width: 95%;
+}
+
+.aside_text_container{
+    display: none;
+}
+
+/*FIN ASIDE TEXT*/
+
+.visibility--hidden {
+    display: none;
+}
+
+.aside_section{
+    /* display: none; */
+}
+
+@media screen and (max-width: 768px)    {
+
+    .close_panel_control    {
+        display: block;
+        padding: 3px;
+        color: var(--color-fonts);
+        background-color: var(--color-aside-background);
+        border: none;
+        font-size: 15px;
+        float: right;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .section_central    {
+        margin-top: 20px;
+    }
+   
+    .top_text_title,
+    .bottom_text_title{
+        padding: 30px;
+    }
+
+    .button_download    {
+        margin-top: 25px;
+    }
+
+    /*ASIDE SECTION*/
+
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .section_top  {
+        width: 100%;
+        height: 100px;
+    }
+
+    .main_title {
+        font-size: 1.6rem;
+        padding: 5px;
+    }
+
+    ul li a {
+        padding: 5px;
+    }
+
+    .section_central    {
+        width: 440px;
+        height: 440px;
+        margin-top: 100px;
+    }
+
+    .top_text_title,
+    .bottom_text_title  {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section_image  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom_text_title{
+        margin-top: 320px;
+    }
+
+    /*ASIDE SECTION*/
+
+    /*IMG SECTION*/
+
+    .aside_all_setting_img{
+        padding: 30px;
+    }
+
+    .panel_control_input {
+        width: 95%;
+    }
+
+    .panel_control_background,
+    .effect_selector{   
+        width: 180px;
+    }
+
+    .effect_selector    {
+        margin-left: 15px;
+    }
+
+    /*TEXT SECTION*/
+    .aside_section{
+        width: 100%;
+    }
+
+    .top_text_area,
+    .bottom_text_area  {
+        width: 98%;
+        height: 40px;
+    }
+
+    #button_align_left,
+    #button_align_center,
+    #button_align_right {
+        width: 64px;
+    }
+
+    #font_colours,
+    #background_font_colours   {
+        width: 215px;
+    }
+    
+    .non_outline,
+    .light_outline,
+    .dark_outline   {
+        width: 142px;
+    }
+    
+    #spacing_setting,
+    #line_spacing_setting   {
+        width: 98.5%;
+    }
+}
+
+@media screen and (max-width: 390px){ 
+
+    .section_top{
+        width: 100%;
+    }
+
+    .section_central    {
+        width: 350px;
+        height: 350px;
+        margin-top: 150px;
+    }
+
+    .section_image  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom_text_title  {
+        margin-top: 250px;
+    }
+
+    /*ASIDE SECTION*/
+
+    .aside_section{
+        width: 100%;
+    }
+
+    /*IMG SECTION*/
+    
+    .panel_control_background,
+    .effect_selector{   
+        width: 137px;
+    }
+
+    /*TEXT SECTION*/
+
+    #button_align_left,
+    #button_align_center,
+    #button_align_right{    
+        width: 50px;
+    }
+
+    #font_colours,
+    #background_font_colours    {
+        width: 150px;
+    }
+
+    .non_outline,
+    .light_outline,
+    .dark_outline   {
+        width: 112px;
+    }
+
+}
+
+@media screen and (max-width: 320px)    {
+
+    .section_top    {
+        width: 100%;
+    }
+
+    .section_central    {
+        width: 280px;
+        height: 280px;
+        margin-top: 200px;
+    }
+
+    .top_text_title,
+    .bottom_text_title{ 
+        padding: 5px;
+    }
+
+    .bottom_text_title{
+        margin-top: 200px;
+    }
+
+    /*ASIDE SECTION*/
+
+    .aside_section{
+        width: 100%;
+    }
+
+    /*IMG SECTION*/
+
+    .panel_control_background,
+    .effect_selector{   
+        width: 103px;
+    }
+
+    .panel_control_background   {
+        margin-left: 6px;
+    }
+
+    .effect_selector    {
+        margin-left: 20px;
+    }
+
+    /*TEXT SECTION*/
+
+    #button_align_left,
+    #button_align_center,
+    #button_align_right {
+        width: 38.5px;
+    }
+
+    #font_colours,
+    #background_font_colours    {
+        width: 140px;
+    }
+
+    .non_outline,
+    .light_outline,
+    .dark_outline{  
+        width: 88.5px;
+    }
+
+}
 
