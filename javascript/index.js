@@ -1,44 +1,51 @@
 /*  VARIABLES  */
 
-const showPanel = document.querySelector("#aside_section")
+const imgPanel = document.querySelector(".aside_section_img")
 
-const imgPanel = document.querySelector(".aside_imge")
+const txtPanel = document.querySelector(".aside_section_text")
 
-const txtPanel = document.querySelector("#aside_text")
+const openPanelImg = document.querySelector(".active_img_panel")
 
-const openPanelImg = document.querySelector("href")
-
-const imgUrl = document.querySelector("#input_url_img")
-
-const containerImg = document.querySelector(".section_image")
 
 
 /*     FUNCIONES    */
 
 const $ = (selector) => document.querySelector(selector)
 
-const urlImg = (e) => {
-      $('section_image').style.backgroundImage = `url("${e.target.value}")`
-}
+// $(imgPanel).style.display = "block"
+// $(txtPanel).style.display = "block"
+
 
 
 /*    EVENTOS      */
 
 /*para que se esconda la sidebar*/
 
-$("#close_panel_control").addEventListener("click", () =>  {
-    $("#aside_section").style.width = "0"
+$(".active_img_panel").addEventListener("click", () =>   {
+    if ($("#aside_section_img").style.display = "none")  {
+    $("#aside_section_img").style.display = "block"
+    $("#aside_section_img").style.width = "100"
+}
 })
 
-$("nav_bar").addEventListener("click", () => { 
-    if ($("#aside_section").style.width === "0")  {
-        $("#aside_section").style.width ="260"
-    }  
-    
+$("#close_panel_control_img").addEventListener("click", () =>   {
+    if ($("#aside_section_img").style.display = "block")  {
+    $("#aside_section_img").style.display = "none"
+}
+})
+
+$(".active_text_panel").addEventListener("click", () => {
+    if ($("#aside_section_text").style.display = "none") {
+        $("#aside_section_text").style.display = "block"
+    }
+})
+
+$("#close_panel_control_text").addEventListener("click", () =>    {
+    if ($("#aside_section_text").style.display = "block") {
+    $("#aside_section_text").style.display = "none"
+    }
 })
 
 /*para que se suba la imagen de la url*/
 
-$("#input_url_img").addEventListener("input", (value) =>  {
-    $(".section_image").style.backgroundImage = `url("${e.target.value}")`
-})
+
