@@ -54,43 +54,29 @@ body{
 
 /*SECCION BARRA DE OPCIONES*/
 
-.container_nav_bar {
+.container_top_button_section {
     display: flex;
     align-content: center;
     justify-content: center;
+    gap: 20px;
 }
 
-.nav_bar    {
-    display: flex;
-    align-items: baseline;
-}
-
-.nav_bar li   {
-    display: inline-block;
-    align-items: center;
-    padding: 5px;
-
-}
-
-li {
-    list-style: none;
-}
-
-.icon   {
-    margin-right: 5px;
-}
-
-ul li a{
+.active_img_panel,
+.active_text_panel,
+.active_dark_mode {
+    background-color: var(--color-top-background);
     color: var(--color-fonts);
-    text-decoration: none;
-    text-align: center;
+    border: none;
     font-size: 15px;
     gap: 20px;
     padding: 10px 15px;
     border-radius: 5%;
 }
 
-.nav_bar a:hover{
+.active_img_panel:hover,
+.active_text_panel:hover,
+.active_dark_mode:hover,
+.close_panel_control:hover{
     background-color: var(--color-buttons-hover);
 }
 
@@ -154,7 +140,8 @@ button:hover {
 
 /*SECCION ASIDE*/
 
-.aside_section{
+.aside_section_img,
+.aside_section_text{
    position: absolute;
    background-color: var(--color-aside-background);
    color: var(--color-fonts);
