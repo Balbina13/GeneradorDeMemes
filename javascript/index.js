@@ -18,18 +18,7 @@ const urlImg = document.querySelector("#input_url_img")
 
 const $ = (selector) => document.querySelector(selector)
 
-const backgroundText = (e) =>    { 
-if (!(e.target.checked))   {
-    $(".top_text_title").style.backgroundColor = e.target.value
-    $(".bottom_text_title").style.backgroundColor = e.target.value
- } else if (e.target.checked) {
-    $(".top_text_title").style.backgroundColor = "transparent"
-    $(".bottom_text_title").style.backgroundColor = "transparent"
-} else  {
-    $(".top_text_title").style.backgroundColor = e.target.value
-    $(".bottom_text_title").style.backgroundColor = e.target.value
-}
-}
+
 
 // $(imgPanel).style.display = "block"
 // $(txtPanel).style.display = "block"
@@ -55,6 +44,7 @@ const allFilters = () =>  {
 $(".active_img_panel").addEventListener("click", () =>   {
     if ($("#aside_section_img").style.display = "none")  {
     $("#aside_section_img").style.display = "block"
+    $("#aside_section_text").style.display = "none"
 }
 })
 
@@ -67,6 +57,7 @@ $("#close_panel_control_img").addEventListener("click", () =>   {
 $(".active_text_panel").addEventListener("click", () => {
     if ($("#aside_section_text").style.display = "none") {
         $("#aside_section_text").style.display = "block"
+        $("#aside_section_img").style.display = "none"
     }
 })
 
@@ -258,17 +249,30 @@ $("#transparent_background").addEventListener("input", (e) =>  {
 /*CONTORNO */
 
 $(".dark_outline").addEventListener("click", () =>   {
-    $(".top_text_title").style.textShadow = "5px"
-    $(".bottom_text_title").style.textShadow = "5px"
+    $(".top_text_title").classList.toggle("dark_stroke")
+    $(".bottom_text_title").classList.toggle("dark_stroke")
 })
 
 $(".light_outline").addEventListener("click", () =>   {
-    $(".top_text_title").style.textShadow = "0.95px"
-    $(".top_text_title").style.textShadow = "0.95px"
-})
+    $(".top_text_title").classList.toggle("light_stroke")
+    $(".bottom_text_title").classList.toggle("light_stroke")
 
 $(".non_outline").addEventListener("click", () =>   {
-    $(".top_text_title").style.textShadow = "0px"
-    $(".top_text_title").style.textShadow = "0px"
+    $(".top_text_title").classList.remove("light_stroke")
+    $(".top_text_title").classList.remove("dark_stroke")
+    $(".bottom_text_title").classList.remove("light_stroke")
+    $(".bottom_text_title").classList.remove("dark_stroke")
+})
 })
 
+/*TEXT SPACING*/
+
+$("#spacing_setting").addEventListener("input", (e) =>   {
+    $(".top_text_title").style.padding = `${ e.target.value}px`
+    $(".bottom_text_title").style.padding = `${ e.target.value}px`
+})
+
+$("#line_spacing_setting").addEventListener("input", (e) => {
+    $(".top_text_title").style.lineHeight = e.target.value
+    $(".bottom_text_title").style.lineHeight = e.target.value
+})
