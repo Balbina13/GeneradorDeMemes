@@ -84,10 +84,9 @@ $("#input_colour_img").addEventListener("input", (e) => {
     $(".section_central").style.backgroundColor = e.target.value
 })
 
-$("#effect_selector_section").addEventListener("click", (e) =>  {
-    $("#section_image").style.backgroundBlendMode = e.target.value
-
-})
+ $("#effect_selector_section").addEventListener("input", (e) =>  {
+     $("#section_image").style.mixBlendMode = e.target.value
+ })
 
 /*FILTROS*/
 
