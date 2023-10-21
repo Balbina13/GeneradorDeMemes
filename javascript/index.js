@@ -11,7 +11,7 @@ const memeImage = document.querySelector(".section_image")
 const urlImg = document.querySelector("#input_url_img")
 
 const downloadMeme = () => {
-    domtoimage.toBlob($(".meme")).then((blob) => {
+    domtoimage.toBlob($(".section_central")).then((blob) => {
         saveAs(blob, "my-meme.png")
     })
 }
@@ -286,6 +286,7 @@ $("#line_spacing_setting").addEventListener("input", (e) => {
 
 /*DARK-LIGHT THEME*/
 
+
 $(".active_light_mode").addEventListener("click", () => {
     const currentTheme = $("body").getAttribute("data-theme")
     if (currentTheme)   {
@@ -305,7 +306,15 @@ $(".active_light_mode").addEventListener("click", () => {
 
  //$(".active_light_mode").addEventListener("click", () => {
    // $("#off").style.display = "block"
-    
+
+   
+   $(".button_download").addEventListener("click", downloadMeme)
+
+
 }
+
+/*DESCARGA MEME*/
+
+//$(".button_download").addEventListener("click", downloadMeme)
 
 window.addEventListener("load", initializeProject)

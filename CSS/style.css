@@ -72,8 +72,7 @@ body{
 
 .active_img_panel,
 .active_text_panel,
-.active_light_mode,
-.active_dark_mode {
+.active_light_mode {
     background-color: var(--color-top-background);
     color: var(--color-fonts);
     border: none;
@@ -86,7 +85,6 @@ body{
 .active_img_panel:hover,
 .active_text_panel:hover,
 .active_light_mode:hover,
-.active_dark_mode:hover,
 .close_panel_control:hover{
     background-color: var(--color-buttons-hover);
 }
