@@ -275,3 +275,27 @@ $("#line_spacing_setting").addEventListener("input", (e) => {
     $(".top_text_title").style.lineHeight = e.target.value
     $(".bottom_text_title").style.lineHeight = e.target.value
 })
+
+/*DARK-LIGHT THEME*/
+
+$(".active_light_mode").addEventListener("click", () => {
+    const currentTheme = $("body").getAttribute("data-theme")
+    if (currentTheme)   {
+        $("body").removeAttribute("data-theme", "light-theme")
+        $(".active_light_mode").innerText = "Modo Claro"
+    } else  {
+        $("body").setAttribute("data-theme" , "light-theme")
+        $(".active_light_mode").innerText = "Modo Oscuro"
+    }
+    //$("off").classList.toggle("visibility--hidden")
+    //$("on").classList.toggle("visibility--hidden")
+})
+
+// $(".active_light_mode").addEventListener("click", () => {
+//     $(".lightbulb-off").classList.add(".visibility--hidden")
+// })
+
+ //$(".active_light_mode").addEventListener("click", () => {
+   // $("#off").style.display = "block"
+    
+ 
