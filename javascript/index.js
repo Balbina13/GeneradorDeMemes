@@ -10,6 +10,12 @@ const memeImage = document.querySelector(".section_image")
 
 const urlImg = document.querySelector("#input_url_img")
 
+const downloadMeme = () => {
+    domtoimage.toBlob($(".meme")).then((blob) => {
+        saveAs(blob, "my-meme.png")
+    })
+}
+
 // $("memeImage")
 
 
@@ -36,6 +42,8 @@ const allFilters = () =>  {
 }
 
 /*    EVENTOS      */
+
+const initializeProject = () => {
 
 /*para que se esconda la sidebar*/
 
@@ -298,4 +306,6 @@ $(".active_light_mode").addEventListener("click", () => {
  //$(".active_light_mode").addEventListener("click", () => {
    // $("#off").style.display = "block"
     
- 
+}
+
+window.addEventListener("load", initializeProject)
