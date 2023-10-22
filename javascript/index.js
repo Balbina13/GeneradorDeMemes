@@ -16,8 +16,6 @@ const downloadMeme = () => {
     })
 }
 
-// $("memeImage")
-
 
 
 /*     FUNCIONES    */
@@ -287,18 +285,45 @@ $("#line_spacing_setting").addEventListener("input", (e) => {
 /*DARK-LIGHT THEME*/
 
 
-$(".active_light_mode").addEventListener("click", () => {
-    const currentTheme = $("body").getAttribute("data-theme")
-    if (currentTheme)   {
-        $("body").removeAttribute("data-theme", "light-theme")
-        $(".active_light_mode").innerText = "Modo Claro"
-    } else  {
-        $("body").setAttribute("data-theme" , "light-theme")
-        $(".active_light_mode").innerText = "Modo Oscuro"
-    }
-    //$("off").classList.toggle("visibility--hidden")
-    //$("on").classList.toggle("visibility--hidden")
-})
+// $(".active_light_mode").addEventListener("click", () => {
+//     const currentTheme = $("body").getAttribute("data-theme")
+//     if (currentTheme)   {
+//        $("body").removeAttribute("data-theme", "light-theme") 
+//        $(".active_dark_mode").style.display = "block"
+//        $(".active_light_mode").style.display = "none"
+//         } else if ($("body").getAttribute("data-theme", "light-theme") ) { 
+//             $("body").removeAttribute("data-theme", "light-theme")
+//             $("body").setAttribute("data-theme", "root")
+//             $(".active_light_mode").style.display = "block"
+            //$(".active_light_mode").style.display = "none"
+          //$(".active_dark_mode").style.display = "block"
+        //$(".active_light_mode").style.display = "none"
+ //   } 
+ //$(".active_light_mode").innerText = "Modo Oscuro"
+ $(".active_light_mode").addEventListener("click", () => {
+        const currentTheme = $("body").getAttribute("data-theme")
+        if (currentTheme)   {
+            $("body").removeAttribute("data-theme", "light-theme") 
+            $(".text_mode").innerText = "Modo Claro"
+ 
+        } else {    
+            $("body").setAttribute("data-theme", "light-theme")
+            $(".text_mode").innerText = "Modo Oscuro"
+        }
+        //$("#light_mode").classList.toggle("visibility--hidden")
+        //$("#dark_mode").classList.toggle("visibility--hidden")
+})   
+    
+
+//$(".active_dark_mode").addEventListener("click", () =>  {
+  //  if($("body").setAttribute("data-theme", "root"))  {
+    //    $(".active_light_mode").classList.toggle("visibility--hidden")
+       // $(".active_dark_mode").style.display = "none"
+    //}
+//})    
+    //$("#light_mode").classList.toggle("visibility--hidden")
+    //$("#dark_mode").classList.toggle("visibility--hidden")
+
 
 // $(".active_light_mode").addEventListener("click", () => {
 //     $(".lightbulb-off").classList.add(".visibility--hidden")

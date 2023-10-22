@@ -21,7 +21,8 @@
 
             <button class="active_img_panel"> <i class="fa-regular fa-image"></i> Imagen</button>
             <button class="active_text_panel"> <i class="fa-solid fa-font"></i>Texto</button>
-            <button class="active_light_mode">Modo Oscuro</button>
+            <button class="active_light_mode"> <i class="fa-solid fa-lightbulb" id="light_mode"><span class="text_mode">Modo Claro</span></i></button>
+
 
         </section><!--END TOP BUTTON SECTION-->
 
@@ -35,174 +36,245 @@
             <div class="section_image" id="section_image"> </div>
             <p class="bottom_text_title">Bottom text</p>
         </div>
-        <button class="button_download" > <i class="fa-solid fa-download"></i>Descargar meme</button>
+        <button class="button_download" ><i class="fa-solid fa-download"></i>Descargar meme</button>
     </section><!--END CONTAINER SECTION-->
 
     <!--IMG ASIDE-->
 
-<section class="aside_section_img" id="aside_section_img">  
-    <button class="close_panel_control" id="close_panel_control_img"><i class="fa-solid fa-xmark"></i></button>
-    <aside class="aside_image">
-        <!-- <button class="close_panel_control" id="close_panel_control"><i class="fa-solid fa-xmark"></i></button> -->
-    <section class="aside_all_setting_img">
-    <div class="aside_img_container">
-        <h2 class="aside_image_title"><b>IMAGEN</b></h2>
-        <h3 class="aside_label_img_url">URL</h3>
-            <input type="text" class="panel_control_input" id="input_url_img">
-    </div><!--aside img container--> 
-    <div class="aside_colour_and_selector">     
-        <div class="aside_background_img_setting">        
-        <label for="colour background" class="panel_control_img_background">FONDO</label>
-        <input type="color" name="color_select" class="panel_control_background" id="input_colour_img" value="#FFFFFF">
-        <span class="color_select_span" id="color_select_span">#FFFFFF</span>
-        </div><!--background img setting-->
-        <div class="colour_effect_selector">
-            <select name="effect_selector" class="effect_selector" id="effect_selector_section">
-                <option value="unset">Ninguno</option>
-                <option value="lighten">Aclarar</option>
-                <option value="darken">Oscurecer</option>
-                <option value="difference">Diferencia</option>
-                <option value="luminosity">Luminosidad</option>
-                <option value="multiply">Multiplicar</option>
-            </select>
-        </div><!--end effect selector-->  
-    </div><!--end colour and selector setting-->       
-    <div class="aside_filters_container">
-        <h3 class="control_panel_img_filters">FILTROS</h3> 
-         <div class="filter_setting">
-        <label for="brightness" class="filter_brightness">BRILLO</label>
-        <input type="range" name="brightness" id="brightness" min="0" max="1" step="0.1" value="1">
-    </div>
-    <div class="filter_setting">
-        <label for="opacity" class="filter_opacity">OPACIDAD</label>
-        <input type="range" name="opacity" id="opacity" min="0" max="1" step="0.1" value="1">
-    </div>
-    <div class="filter_setting">
-        <label for="contrast" class="filter_contrast">CONTRASTE</label>
-        <input type="range" name="contrast" id="contrast" min="100" max="1000" step="1" value="100">
-    </div>
-    <div class="filter_setting">
-        <label for="blur" class="filter_blur">DESENFOQUE</label>
-        <input type="range" name="blur" id="blur" min="0" max="10" step="0.1" value="0">
-    </div>
-    <div class="filter_setting">
-        <label for="grayscale" class="grayscale">ESCALA DE GRISES</label>
-        <input type="range" name="grayscale" id="grayscale" min="0" max="100" step="1" value="0">
-    </div>
-    <div class="filter_setting">
-        <label for="sepia" class="filter_sepia">SEPIA</label>
-        <input type="range" name="sepia" id="sepia" min="0" max="100" step="1" value="0">
-    </div>
-    <div class="filter_setting">
-        <label for="hue-rotate">HUE</label>
-        <input type="range" name="hue-rotate" id="hue-rotate" min="0" max="359" step="1" value="0" >
-    </div>
-    <div class="filter_setting">
-        <label for="saturate" class="filter_saturation">SATURADO<label>
-        <input type="range" name="saturate" id="saturate" min="100" max="1000" step="10" value="100">
-    </div>
-    <div class="filter_setting">
-        <label for="invert" class="filter_invert">NEGATIVO</label>
-        <input type="range" name="invert" id="invert" min="0" max="1" step="0.1" value="0">
-    </div>
-        <button class="reset_filters_button" id="reset_filters_button">Reestablecer filtros</button>                                   
-    </div><!--panel control-->  
-    </section><!--end img section-->  
-    </aside><!--end img aside-->
-     
-   
-</section><!--end aside section img-->
-
-<!--ASIDE TEXT-->
-
-<section class="aside_section_text" id="aside_section_text">
-    <button class="close_panel_control" id="close_panel_control_text"><i class="fa-solid fa-xmark"></i></button>
-    <aside class="aside_text" id="aside_text">
-    <section class="aside_all_setting_text"> 
-    <div class="aside_text_container">    
-        <h2 class="aside_text_title">Texto</h2>
-        <div class="text_top_container">
-            <h3 class="control_panel_txt_top">Superior</h3>
-            <textarea name="top_text_area" class="top_text_area" id="top_text_area" cols="28" rows="2">TOP TEXT</textarea>
-            <input type="checkbox" name="non_text_top" id="non_text_top">
-            <span class="non_text_top_span">Sin texto superior</span>
-        </div>
-        <div class="text_bottom_container">
-            <h3 class="control_panel_txt_bottom">Inferior</h3>
-            <textarea name="bottom_text_area" class="bottom_text_area" id="bottom_text_area" cols="28" rows="2">BOTTOM TEXT</textarea>
-            <input type="checkbox" name="non_text_bottom" id="non_text_bottom">
-            <span class="non_text_top_span">Sin texto inferior</span>
-        </div>
-        <div class="font_family_settings">
-            <h3 class="font_title">FUENTE</h3>
-            <select name="font_selection" id="font_selection" value="Impact">
-                <option value="Arial, Helvetica, sans-serif">Arial</option>
-                <option value="Arial Black">Arial Black</option>
-                <option value="American Typewriter">American Typewriter</option>
-                <option value="Andale Mono">Andale Mono</option>
-                <option value="Comic Sans MS">Comic Sans MS</option>
-                <option value="Arial, Helvetica, sans-serif">Helvetica</option>
-                <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" selected>Impact</option>
-                <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
-                <option value="'Times New Roman', Times, serif">Times New Roman</option>
-            </select>
+    <section class="aside_section_img" id="aside_section_img"> 
         
-        <div class="align_text_section">
-            <input type="number" name="font_size" aria-label="Tamaño de fuente" class="font_size" id="font_size" min="12" value="45">
-            <div class="buttons_align_container">
-                <button class="button_align" id="button_align_left"><i class="fa-solid fa-align-left"></i></button>
-                <button class="button_align" id="button_align_center"><i class="fa-solid fa-align-center"></i></button>
-                <button class="button_align" id="button_align_right"><i class="fa-solid fa-align-right"></i></button>
-            </div><!--end align options-->
-        </div><!--end font size and align options-->
-        </div><!--end font section-->
-        <div class="panel_colour_background_options">
-            <div class="colour_div">
-            <div class="colour_options">
-                <h3 class="control_panel_txt_colour">Color</h3> 
-                <input type="color" name="font_colours" id="font_colours" value="#000000">
-                <span id="text_color">#000000</span>
-            </div><!--end colour options-->
-            <div class="background_colours_options">
-                <h3 class="control_panel_txt_background">Fondo</h3>  
-                <input type="color" name="background_font_colours" id="background_font_colours" value="#FFFFFF" aria-label="Color de Texto">
-                <span id="text_background_color">#FFFFFF</span>
-            </div><!--end background colour options-->
-        </div>
-            <div class="panel_checkbox">
-                <input type="checkbox" name="transparent_background" id="transparent_background">
-                <label for="non_colour_or_text" class="non_colour_or_text">Fondo transparente</label>
-            </div>
-        </div>
-        <div class="buttons_panel_control_aside">
-            <h3 class="control_panel_txt_outline">Contorno</h3>
-            <div class="buttons_outline">
-                <button class="non_outline">Ninguno</button>
-                <button class="light_outline">Claro</button>
-                <button class="dark_outline">Oscuro</button>
-            </div>
-        </div>
-        <div class="panel_control_spacing">
-            <h3 class="control_panel_txt_spacing">Espaciado</h3>
-            <input type="number" class="spacing_setting" id="spacing_setting" min="10" max="50" value="18">
-        </div>      
-        <div class="panel_control_line_spacing">  
-            <h3 class="control_panel_txt_line_spacing">Interlineado</h3>
-            <select name="line_spacing_setting" id="line_spacing_setting">
-                <option value="0.8">0.8</option>
-                <option value="1">1</option>
-                <option value="1.2" selected>1.2</option>
-                <option value="1.5">1.5</option>
-                <option value="2">2</option>
-                <option value="2.5">2.5</option>
-            </select>
-        </div>      
-    </div><!--end aside text-->    
-    </section> 
-    
-</section><!--end aside  text--> 
-    </aside>
+        <!--CLOSE BUTTON-->
+        
+        <button class="close_panel_control" id="close_panel_control_img"><i class="fa-solid fa-xmark"></i></button>
 
+        <!--ASIDE IMG-->
+
+        <aside class="aside_image">
+            <section class="aside_all_setting_img">
+
+                    <!--ASIDE URL SECTION-->
+
+                <div class="aside_img_container">
+                    <h2 class="aside_image_title"><b>IMAGEN</b></h2>
+                    <h3 class="aside_label_img_url">URL</h3>
+                        <input type="text" class="panel_control_input" id="input_url_img">
+                </div><!--aside img container--> 
+
+                    <!--ASIDE COLOUR AND SELECTOR BACKGROUND-->
+
+                <div class="aside_colour_and_selector">
+
+                    <!--ASIDE BACKGROUND COLOUR-->
+
+                    <div class="aside_background_img_setting">        
+                        <label for="colour background" class="panel_control_img_background">FONDO</label>
+                        <input type="color" name="color_select" class="panel_control_background" id="input_colour_img" value="#FFFFFF">
+                        <span class="color_select_span" id="color_select_span">#FFFFFF</span>
+                    </div><!--background img setting-->
+
+                    <!--ASIDE BACKGROUND COLOUR EFFECT-->
+
+                    <div class="colour_effect_selector">
+                        <select name="effect_selector" class="effect_selector" id="effect_selector_section">
+                            <option value="unset">Ninguno</option>
+                            <option value="lighten">Aclarar</option>
+                            <option value="darken">Oscurecer</option>
+                            <option value="difference">Diferencia</option>
+                            <option value="luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>
+                        </select>
+                    </div><!--end colour effect selector-->  
+
+                </div><!--end aside colour and selector setting-->  
+
+                    <!--ASIDE FILTERS CONTAINER-->
+
+                <div class="aside_filters_container">
+                    <h3 class="control_panel_img_filters">FILTROS</h3> 
+                    <div class="filter_setting">
+                        <label for="brightness" class="filter_brightness">BRILLO</label>
+                        <input type="range" name="brightness" id="brightness" min="0" max="1" step="0.1" value="1">
+                    </div><!--FILTER BRIGHTNESS-->
+                    <div class="filter_setting">
+                        <label for="opacity" class="filter_opacity">OPACIDAD</label>
+                        <input type="range" name="opacity" id="opacity" min="0" max="1" step="0.1" value="1">
+                    </div><!--FILTER OPACITY-->
+                    <div class="filter_setting">
+                        <label for="contrast" class="filter_contrast">CONTRASTE</label>
+                        <input type="range" name="contrast" id="contrast" min="100" max="1000" step="1" value="100">
+                    </div><!--FILTER CONTRAST-->
+                    <div class="filter_setting">
+                        <label for="blur" class="filter_blur">DESENFOQUE</label>
+                        <input type="range" name="blur" id="blur" min="0" max="10" step="0.1" value="0">
+                    </div><!--FILTER BLUR-->
+                    <div class="filter_setting">
+                        <label for="grayscale" class="grayscale">ESCALA DE GRISES</label>
+                        <input type="range" name="grayscale" id="grayscale" min="0" max="100" step="1" value="0">
+                    </div><!--FILTER GRAYSCALE-->
+                    <div class="filter_setting">
+                        <label for="sepia" class="filter_sepia">SEPIA</label>
+                        <input type="range" name="sepia" id="sepia" min="0" max="100" step="1" value="0">
+                    </div><!--FILTER SEPIA-->
+                    <div class="filter_setting">
+                        <label for="hue-rotate">HUE</label>
+                        <input type="range" name="hue-rotate" id="hue-rotate" min="0" max="359" step="1" value="0" >
+                    </div><!--FILTER HUE-ROTATE-->
+                    <div class="filter_setting">
+                        <label for="saturate" class="filter_saturation">SATURADO<label>
+                        <input type="range" name="saturate" id="saturate" min="100" max="1000" step="10" value="100">
+                    </div><!--FILTER SATURATE-->
+                    <div class="filter_setting">
+                        <label for="invert" class="filter_invert">NEGATIVO</label>
+                        <input type="range" name="invert" id="invert" min="0" max="1" step="0.1" value="0">
+                    </div><!--FILTER INVERT-->
+                    <button class="reset_filters_button" id="reset_filters_button">Reestablecer filtros</button>   
+
+                </div><!--ASIDE FILTER CONTAINER-->  
+
+            </section><!--ASIDE ALL SETTING IMG-->  
+
+        </aside><!--ASIDE IMG-->
+   
+    </section><!--ASIDE SECTION IMG-->
+
+    <!--ASIDE TEXT-->
+
+    <section class="aside_section_text" id="aside_section_text">
+
+        <!--CLOSE BUTTON-->
+
+        <button class="close_panel_control" id="close_panel_control_text"><i class="fa-solid fa-xmark"></i></button>
+
+        <!--ASIDE TEXT-->
+
+        <aside class="aside_text" id="aside_text">
+            <section class="aside_all_setting_text">
+
+                    <!--ASIDE TEXT CONTAINER--> 
+
+                <div class="aside_text_container">    
+                    <h2 class="aside_text_title">Texto</h2>
+
+                    <!--TOP TEXT SECTION-->
+
+                    <div class="text_top_container">
+                        <h3 class="control_panel_txt_top">Superior</h3>
+                        <textarea name="top_text_area" class="top_text_area" id="top_text_area" cols="28" rows="2">TOP TEXT</textarea>
+                        <input type="checkbox" name="non_text_top" id="non_text_top">
+                        <span class="non_text_top_span">Sin texto superior</span>
+                    </div><!--TOP TEXT SECTION-->
+                    
+                    <!--BOTTOM TEXT SECTION-->
+
+                    <div class="text_bottom_container">
+                        <h3 class="control_panel_txt_bottom">Inferior</h3>
+                        <textarea name="bottom_text_area" class="bottom_text_area" id="bottom_text_area" cols="28" rows="2">BOTTOM TEXT</textarea>
+                        <input type="checkbox" name="non_text_bottom" id="non_text_bottom">
+                        <span class="non_text_top_span">Sin texto inferior</span>
+                    </div><!--BOTTOM TEXT SECTION-->
+
+                    <!--FONT SECTION-->
+
+                    <div class="font_family_settings">
+
+                        <h3 class="font_title">FUENTE</h3>
+                        <select name="font_selection" id="font_selection" value="Impact">
+                            <option value="Arial, Helvetica, sans-serif">Arial</option>
+                            <option value="Arial Black">Arial Black</option>
+                            <option value="American Typewriter">American Typewriter</option>
+                            <option value="Andale Mono">Andale Mono</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                            <option value="Arial, Helvetica, sans-serif">Helvetica</option>
+                            <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" selected>Impact</option>
+                            <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+                            <option value="'Times New Roman', Times, serif">Times New Roman</option>
+                        </select>
+
+                        <!--ALIGN TEXT SECTION-->
+
+                        <div class="align_text_section">
+                            <input type="number" name="font_size" aria-label="Tamaño de fuente" class="font_size" id="font_size" min="12" value="45">
+                        <!--BUTTONS ALIGN-->
+                            <div class="buttons_align_container">
+                                <button class="button_align" id="button_align_left"><i class="fa-solid fa-align-left"></i></button>
+                                <button class="button_align" id="button_align_center"><i class="fa-solid fa-align-center"></i></button>
+                                <button class="button_align" id="button_align_right"><i class="fa-solid fa-align-right"></i></button>
+                            </div><!--BUTTONS ALIGN CONTAINER-->
+
+                        </div><!--TEXT ALIGN SECTION-->
+
+                    </div><!--FONT FAMILY SETTINGS-->
+
+                    <!--BACKGROUND TEXT COLOUR OPTIONS-->
+
+                    <div class="panel_colour_background_options">
+                        <div class="colour_div">
+
+                            <!-- FONT COLOUR OPTIONS-->  
+
+                            <div class="colour_options">
+                                <h3 class="control_panel_txt_colour">Color</h3> 
+                                <input type="color" name="font_colours" id="font_colours" value="#000000">
+                                <span id="text_color">#000000</span>
+                            </div><!-- FONT COLOUR OPTIONS-->
+
+                            <!--BACKGROUND COLOURS OPTIONS-->
+
+                            <div class="background_colours_options">
+                                <h3 class="control_panel_txt_background">Fondo</h3>  
+                                <input type="color" name="background_font_colours" id="background_font_colours" value="#FFFFFF" aria-label="Color de Texto">
+                                <span id="text_background_color">#FFFFFF</span>
+                            </div><!--BACKGROUND COLOURS OPTIONS-->
+
+                        </div><!--BACKGROUND TEXT COLOUR OPTIONS-->
+
+                        <!--PANEL CHECKBOX-->
+
+                        <div class="panel_checkbox">
+                            <input type="checkbox" name="transparent_background" id="transparent_background">
+                            <label for="non_colour_or_text" class="non_colour_or_text">Fondo transparente</label>
+                        </div><!--PANEL CHECKBOX-->
+                    </div><!--BACKGROUND TEXT COLOUR OPTIONS-->
+
+                    <!--OUTLINE SECTION-->
+
+                    <div class="buttons_panel_control_aside">
+                        <h3 class="control_panel_txt_outline">Contorno</h3>
+                        <div class="buttons_outline">
+                            <button class="non_outline">Ninguno</button>
+                            <button class="light_outline">Claro</button>
+                            <button class="dark_outline">Oscuro</button>
+                        </div>
+                    </div><!--OUTLINE SECTION-->
+
+                    <!--SPACING SECTION-->
+
+                    <div class="panel_control_spacing">
+                        <h3 class="control_panel_txt_spacing">Espaciado</h3>
+                        <input type="number" class="spacing_setting" id="spacing_setting" min="10" max="50" value="18">
+                    </div><!--SPACING SECTION-->
+                    
+                    <!--LINE SPACING SECTION-->
+
+                    <div class="panel_control_line_spacing">  
+                        <h3 class="control_panel_txt_line_spacing">Interlineado</h3>
+                        <select name="line_spacing_setting" id="line_spacing_setting">
+                            <option value="0.8">0.8</option>
+                            <option value="1">1</option>
+                            <option value="1.2" selected>1.2</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                        </select>
+                    </div><!--LINE SPACING SECTION--> 
+
+                </div><!--ASIDE TEXT CONTAINER-->  
+
+            </section><!--ASIDE ALL SETTING TEXT--> 
+
+        </aside><!--ASIDE TEXT-->
+
+    </section><!--ASIDE SECTION TEXT-->
     <script src="./javascript/index.js"></script>
 </body>
 </html>
