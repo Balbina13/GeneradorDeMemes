@@ -11,6 +11,10 @@
 
 /* font-family: 'Open Sans', sans-serif; */
 
+@import url('https://fonts.cdnfonts.com/css/andale-mono');
+
+/*font-family: 'Andale Mono', sans-serif;*/
+
 :root   {
     --color-background: #30343f;
     --color-top-background: #191e2b;
@@ -89,11 +93,14 @@ body{
     background-color: var(--color-buttons-hover);
 }
 
-.text_mode  {
+.text_mode,
+.text_img,
+.text_text  {
     color: var(--color-fonts);
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 5px;
+    font-weight: normal;
+    padding-left: 5px;
 }
 
 /*FIN SECCION BARRA DE OPCIONES*/
@@ -127,11 +134,11 @@ body{
     text-align: center;
 }
 
-.light_stroke{  
+.light_stroke {  
     -webkit-text-stroke: 1px black;
 }
 
-.dark_stroke    {
+.dark_stroke {
     -webkit-text-stroke: 2px black;
 }
 
@@ -208,8 +215,8 @@ button:hover {
 .panel_control_input    {
     background-color: var(--color-background);
     align-self: center;
-    width: 90%;
-    margin-left: 10px;
+    width: 95%;
+    /* margin-left: 2px; */
     padding: 10px;
     border: none;
     outline: none;
@@ -261,8 +268,8 @@ button:hover {
     color: var(--color-fonts);
     font-size: 15px;
     margin-top: 22px;
-    margin-left: 30px; 
-    padding: 10px;
+    margin-left: 45px; 
+    padding: 9.5px;
     border-radius: 5px;
     background-color: var(--color-background);
 }
@@ -288,12 +295,12 @@ input[type='color']::-webkit-color-swatch {
 
 .effect_selector {
     background-color: var(--color-background);
-    padding: 10px 5px;
+    padding: 11px 5px;
     border: none;
     outline: none;
     border-radius: 3px;
     color: var(--color-fonts);
-    margin-left: 5px;
+    margin-right: -15px;
 }
 
 .aside_filters_container    {
@@ -350,6 +357,11 @@ input[type='color']::-webkit-color-swatch {
     flex-direction: column;
     justify-content: space-around;
     gap: 25px;
+}
+
+.top_text_area, 
+.bottom_text_area   {
+    width: 99%;
 }
 
 .top_text_area, 
@@ -439,6 +451,17 @@ input[type='color']::-webkit-color-swatch {
 #font_size  {
     width: 50%;
     padding: 10px 10px 10px;
+}
+
+.buttons_outline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.non_outline,
+.light_outline,
+.dark_outline   {
+    width: 90px;
 }
 
 .button_align   {
