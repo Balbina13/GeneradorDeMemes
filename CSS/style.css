@@ -214,10 +214,13 @@ button:hover {
 }
 
 .panel_control_input    {
+    color: #ffff;
+}
+
+.panel_control_input    {
     background-color: var(--color-background);
     align-self: center;
     width: 95%;
-    /* margin-left: 2px; */
     padding: 10px;
     border: none;
     outline: none;
