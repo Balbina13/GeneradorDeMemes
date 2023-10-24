@@ -678,7 +678,7 @@ input[type='color']::-webkit-color-swatch {
     }
 
     .effect_selector    {
-        margin-left: 15px;
+        margin-left: 30px;
     }
 
     /*TEXT SECTION*/
@@ -695,7 +695,7 @@ input[type='color']::-webkit-color-swatch {
     #button_align_left,
     #button_align_center,
     #button_align_right {
-        width: 60px;
+        width: 58.2px;
     }
 
     #font_colours,
