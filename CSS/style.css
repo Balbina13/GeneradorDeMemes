@@ -824,12 +824,12 @@ input[type='color']::-webkit-color-swatch {
     #button_align_left,
     #button_align_center,
     #button_align_right {
-        width: 38.5px;
+        width: 31.5px;
     }
 
     #font_colours,
     #background_font_colours    {
-        width: 140px;
+        width: 120px;
     }
 
     .non_outline,
